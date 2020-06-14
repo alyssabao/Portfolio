@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.imgFormat {
+    position: relative;
+    z-index: 9;
+}
+
+.scroll {
+    scroll-behavior: smooth;
+}
+
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+  }
+
+.headerColor {
+    background-color: #eed2cc;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: black;
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoFormat {
+    padding: 10px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.helloFormat {
+    text-transform: uppercase;
+    font-size: 200pt;
+    color: #e58b72;
+    z-index: 2;
+    position: relative;
+}
+
+.alybFormat {
+    position: relative;
+    top: -410px;
+    left: 65px;
+    font-size: 40pt;
+    z-index: 3;
+}
+
+header {
+    z-index: 1;
+}
+
+.webFormat {
+    margin-left: 200px;
+}
+
+.fwdFormat{
+    position: relative;
+    top: -380px;
+    left: -140px;
+    font-size: 40pt;
+    z-index: 4;
+    font-size: 20pt;
+}
+
+.aboutMe {
+    background-color: #c96268;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-size: contain;
+    z-index: 5;
+}
+
+.aboutMeImage {
+    height: 100vh;
+}
+
+.iconFormat {
+    margin-left: 30px;
+    color:#ffca22;
+}
+
+.iconFormat:hover {
+    color: #d8a246;
+}
+
+.titleFormat {
+    margin-left: 30px;
+    color:#eed2cc;
+    background-color: black;
+    padding: 10px;
+}
+
+.experience {
+    width: 200px;
+}
+
+.experienceBox {
+    background-color:#ffca22;
+    margin: 30px;
+    padding: 20px;
+}
+
+.projects {
+    background-color:#eed2cc;
+    height: 100%;
+    padding-top: 50px;
+}
+
+.navLetter {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #eed2cc;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.navLetter:hover {
+    color: #d8a246;
+}
+
+.active {
+    color:#e16c4b;
+}
+
+.duration {
+    position: relative;
+    top: -15px;
+}
+
+.projectTitle {
+    width: 150px;
+}
+
+.projectsFormat {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.cardFormat {
+    color: white;
+    background-color: black;
+    width: 500px;
+    height: 180px;
+    padding: 20px;
+    position: relative;
+    top: -200px;
+    left: -20px;
+    z-index: 7;
+    transition: 0.3s ease-in-out;
+}
+
+.cardFormat span {
+    visibility: hidden;
+}
+
+.cardFormat:hover span {
+    visibility: visible;
+}
+
+.cardFormat:hover {
+    height: 210px;
+    position: relative;
+    top: -30px;
+}
+
+.cardLink {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    top: -5px;
+    left: 5px;
+}
+
+.cardLink:hover {
+    color: #df95a1;
+}
+
+.icon {
+    color: #df95a1;
+}
+
+.contact {
+    background-color: #e16c4b;
+    padding: 30px;
+    color: white;
+}
+
+.4xIcons {
+    visibility: hidden;
+    display: none;
+}
+
+@media (max-width: 1268px) {
+    .helloFormat {
+        font-size: 150pt;
+    }
+
+    .alybFormat {
+        font-size: 30pt;
+        position: relative;
+        top: -305px;
+        left: 50px;
+    }
+
+    .fwdFormat {
+        font-size: 15pt;
+        position: relative;
+        top: -290px;
+        left: -105px;
+
+    }
+}
