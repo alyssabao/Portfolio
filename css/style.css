@@ -86,6 +86,7 @@ header {
     display: flex;
     justify-content: space-between;
     background-size: contain;
+    position: relative;
     z-index: 5;
 }
 
@@ -104,6 +105,7 @@ header {
 
 .titleFormat {
     margin-left: 30px;
+    margin-right: 30px;
     color:#eed2cc;
     background-color: black;
     padding: 10px;
@@ -203,12 +205,90 @@ header {
 
 .contact {
     background-color: #e16c4b;
+    height: 100vh;
     padding: 30px;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-.4xIcons {
-    visibility: hidden;
+.contactForm {
+    margin-left: 30px;
+    margin-right: 30px;
+    border: none;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+    padding: 15px;
+    background-color:#eed2cc;
+    padding-left: 50px;
+}
+
+.writeMessage {
+    height: 200px;
+    background-image: url('/images/pencil.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-x: 8px;
+    background-position-y: 8px;
+}
+
+.contactName {
+    background-image: url('/images/user.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-x: 8px;
+    background-position-y: 11px;
+
+}
+
+.contactEmail {
+    background-image: url('/images/envelope.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-x: 8px;
+    background-position-y: 15px;
+}
+
+.contactPhone {
+    background-image: url('/images/phone.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-x: 8px;
+    background-position-y: 11px;
+}
+
+.contactButton {
+    width: 140px;
+    margin-left: 30px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: black;
+    color: #eed2cc;
+}
+
+.contactButton:hover {
+    cursor: pointer;
+    color: #daa147;
+}
+
+footer {
+    background-color:#daa147;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fourIcons {
+    display: none;
+}
+
+.smallImage {
     display: none;
 }
 
@@ -230,5 +310,65 @@ header {
         top: -290px;
         left: -105px;
 
+    }
+}
+
+@media (max-width: 1208px) {
+    .fiveIcons {
+        display: none;
+    }
+
+    .fourIcons {
+        display: block;
+    }
+}
+
+@media (max-width: 1138px) {
+    .aboutMeImage {
+        display: none;
+    }
+
+    .smallImage {
+        display: block;
+        width: 100%;
+    }
+
+    .fiveIcons {
+        display: block;
+    }
+
+    .fourIcons {
+        display: none;
+    }
+}
+
+@media (max-width: 997px) {
+    .helloFormat {
+        font-size: 100pt;
+    }
+
+    .alybFormat {
+        font-size: 20pt;
+        position: relative;
+        top: -205px;
+        left: 30px;
+    }
+
+    .fwdFormat {
+        font-size: 12pt;
+        position: relative;
+        top: -190px;
+        left: -35px;
+
+    }
+}
+
+@media (max-width: 807px) {
+    .active {
+        display: none;
+    }
+
+    .webFormat {
+        margin: 0px;
     }
 }
